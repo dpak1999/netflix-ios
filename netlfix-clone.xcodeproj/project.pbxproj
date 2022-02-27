@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		008F007027CBFE40009DD74F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F006F27CBFE40009DD74F /* AppDelegate.swift */; };
 		008F007227CBFE40009DD74F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F007127CBFE40009DD74F /* SceneDelegate.swift */; };
-		008F007427CBFE40009DD74F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F007327CBFE40009DD74F /* ViewController.swift */; };
+		008F007427CBFE40009DD74F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F007327CBFE40009DD74F /* MainTabBarViewController.swift */; };
 		008F007927CBFE41009DD74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008F007827CBFE41009DD74F /* Assets.xcassets */; };
 		008F007C27CBFE41009DD74F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008F007A27CBFE41009DD74F /* LaunchScreen.storyboard */; };
+		008F008527CC0045009DD74F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F008427CC0045009DD74F /* HomeViewController.swift */; };
+		008F008727CC0079009DD74F /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F008627CC0079009DD74F /* UpcomingViewController.swift */; };
+		008F008927CC00A2009DD74F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F008827CC00A2009DD74F /* SearchViewController.swift */; };
+		008F008B27CC00BF009DD74F /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F008A27CC00BF009DD74F /* DownloadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008F006C27CBFE40009DD74F /* netlfix-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "netlfix-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		008F006F27CBFE40009DD74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		008F007127CBFE40009DD74F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		008F007327CBFE40009DD74F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		008F007327CBFE40009DD74F /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		008F007827CBFE41009DD74F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		008F007B27CBFE41009DD74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		008F007D27CBFE41009DD74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008F008427CC0045009DD74F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		008F008627CC0079009DD74F /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		008F008827CC00A2009DD74F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		008F008A27CC00BF009DD74F /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		008F006E27CBFE40009DD74F /* netlfix-clone */ = {
 			isa = PBXGroup;
 			children = (
+				008F008327CC000C009DD74F /* Controllers */,
 				008F006F27CBFE40009DD74F /* AppDelegate.swift */,
 				008F007127CBFE40009DD74F /* SceneDelegate.swift */,
-				008F007327CBFE40009DD74F /* ViewController.swift */,
+				008F007327CBFE40009DD74F /* MainTabBarViewController.swift */,
 				008F007827CBFE41009DD74F /* Assets.xcassets */,
 				008F007A27CBFE41009DD74F /* LaunchScreen.storyboard */,
 				008F007D27CBFE41009DD74F /* Info.plist */,
 			);
 			path = "netlfix-clone";
+			sourceTree = "<group>";
+		};
+		008F008327CC000C009DD74F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				008F008427CC0045009DD74F /* HomeViewController.swift */,
+				008F008627CC0079009DD74F /* UpcomingViewController.swift */,
+				008F008827CC00A2009DD74F /* SearchViewController.swift */,
+				008F008A27CC00BF009DD74F /* DownloadViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				008F007427CBFE40009DD74F /* ViewController.swift in Sources */,
+				008F008927CC00A2009DD74F /* SearchViewController.swift in Sources */,
+				008F007427CBFE40009DD74F /* MainTabBarViewController.swift in Sources */,
 				008F007027CBFE40009DD74F /* AppDelegate.swift in Sources */,
+				008F008B27CC00BF009DD74F /* DownloadViewController.swift in Sources */,
 				008F007227CBFE40009DD74F /* SceneDelegate.swift in Sources */,
+				008F008727CC0079009DD74F /* UpcomingViewController.swift in Sources */,
+				008F008527CC0045009DD74F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
